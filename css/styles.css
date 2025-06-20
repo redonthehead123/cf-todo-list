@@ -12,7 +12,8 @@ width: 300px;
 margin: 0 auto;
 margin-top: 40px;
 background: white;
-border-radius: 5px;}
+border-radius: 5px;
+}
 
 form {
 display: inline-block;
@@ -29,6 +30,7 @@ color:#ffffff;
 border-radius: 5px;
 text-align:center;
 margin-top:2px;
+margin-left: 20px;
 padding: 5px 15px;
 }
 
@@ -36,9 +38,17 @@ padding: 5px 15px;
 cursor: pointer;
 opacity: .8;}
 
-ol {padding-left: 20px;}
+ol {
+	padding-left: 0px;
+}
 
-ol li {padding: 5px;color:#000;}
+ol li {
+  padding: 5px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 ol li:nth-child(even){background: #dfdfdf;}
 
@@ -58,4 +68,15 @@ li > crossOutButton {
 	float: right;
 	color: #025f70;
 	font-weight: 800;
+}
+
+.crossOutButton {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  color: #025f70;
+  font-weight: 800;
+  cursor: pointer;
+  min-width: 28px; /* Ensures all buttons have the same width for alignment */
+  text-align: center;
 }
