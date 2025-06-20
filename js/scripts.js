@@ -5,7 +5,7 @@ function newItem() {
   let li = $('<li></li>').text(inputValue);
 
   // Cross out an item from the list upon clicking the item
-  li.on('click', function() {
+  li.on('dblclick', function() {
     $(this).toggleClass('strike');
   });
 
